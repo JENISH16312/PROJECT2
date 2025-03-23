@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "jenish project2"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "28a045c5-9e33-4296-9430-eaed5df9f11e"
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "config": "{\"version\":\"5.55\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU06\",\"version\":\"5.56\",\"type\":2},\"customTheme\":{\"name\":\"Tidal\",\"version\":\"5.56\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true,\"useEnhancedTooltips\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY24SU06",
+            "path": "BaseThemes/CY24SU06.json",
+            "type": 202
+          },
+          {
+            "name": "Tidal",
+            "path": "BuiltInThemes/Tidal.json",
+            "type": 201
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "Page 1",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "cf1e46c4db4a963d5730",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"673cce04d15793025ed2\",\"layouts\":[{\"id\":0,\"position\":{\"x\":897.007874015748,\"y\":0,\"z\":3,\"width\":382.99212598425197,\"height\":314.12073490813646,\"tabOrder\":3}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Employee Attrition.SalesEmployeeCount\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"e\",\"Entity\":\"Employee Attrition\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"SalesEmployeeCount\"},\"Name\":\"Employee Attrition.SalesEmployeeCount\",\"NativeReferenceName\":\"SalesEmployeeCount\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"SalesEmployeeCount\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{},\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":4,\"Percent\":0}}}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"13D\"}}},\"width\":{\"expr\":{\"Literal\":{\"Value\":\"3D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 314.12,
+          "width": 382.99,
+          "x": 897.01,
+          "y": 0.00,
+          "z": 3.00
+        },
+        {
+          "config": "{\"name\":\"771d4d25473560609051\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":314.12073490813646,\"z\":1,\"width\":604.7244094488188,\"height\":406.50918635170603,\"tabOrder\":1}}],\"singleVisual\":{\"visualType\":\"clusteredColumnChart\",\"projections\":{\"Y\":[{\"queryRef\":\"Employee Attrition.AverageSatisfaction\"},{\"queryRef\":\"CountNonNull(Employee Attrition.Emp ID)\"}],\"Category\":[{\"queryRef\":\"Employee Attrition.dept\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"e\",\"Entity\":\"Employee Attrition\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"AverageSatisfaction\"},\"Name\":\"Employee Attrition.AverageSatisfaction\",\"NativeReferenceName\":\"AverageSatisfaction\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"dept\"},\"Name\":\"Employee Attrition.dept\",\"NativeReferenceName\":\"dept\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"Emp ID\"}},\"Function\":5},\"Name\":\"CountNonNull(Employee Attrition.Emp ID)\",\"NativeReferenceName\":\"Count of Emp ID\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"AverageSatisfaction\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":4,\"Percent\":0}}}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"13D\"}}},\"width\":{\"expr\":{\"Literal\":{\"Value\":\"3D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 406.51,
+          "width": 604.72,
+          "x": 0.00,
+          "y": 314.12,
+          "z": 1.00
+        },
+        {
+          "config": "{\"name\":\"a24d60d862c6c6b3531c\",\"layouts\":[{\"id\":0,\"position\":{\"x\":540.8923884514436,\"y\":0,\"z\":2,\"width\":356.11548556430444,\"height\":314.12073490813646,\"tabOrder\":2}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Employee Attrition.MaxTimeSpent\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"e\",\"Entity\":\"Employee Attrition\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"MaxTimeSpent\"},\"Name\":\"Employee Attrition.MaxTimeSpent\",\"NativeReferenceName\":\"MaxTimeSpent\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"MaxTimeSpent\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":4,\"Percent\":0}}}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"13D\"}}},\"width\":{\"expr\":{\"Literal\":{\"Value\":\"3D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 314.12,
+          "width": 356.12,
+          "x": 540.89,
+          "y": 0.00,
+          "z": 2.00
+        },
+        {
+          "config": "{\"name\":\"b594a94b98568ea20573\",\"layouts\":[{\"id\":0,\"position\":{\"x\":604.7244094488188,\"y\":314.12073490813646,\"z\":4,\"width\":675.275590551181,\"height\":406.50918635170603,\"tabOrder\":4}}],\"singleVisual\":{\"visualType\":\"clusteredColumnChart\",\"projections\":{\"Y\":[{\"queryRef\":\"Employee Attrition.WorkAccidentPercentage\"},{\"queryRef\":\"Sum(Employee Attrition.Work_accident)\"},{\"queryRef\":\"CountNonNull(Employee Attrition.Emp ID)\"}],\"Category\":[{\"queryRef\":\"Employee Attrition.dept\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"e\",\"Entity\":\"Employee Attrition\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"WorkAccidentPercentage\"},\"Name\":\"Employee Attrition.WorkAccidentPercentage\",\"NativeReferenceName\":\"WorkAccidentPercentage\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"Work_accident\"}},\"Function\":0},\"Name\":\"Sum(Employee Attrition.Work_accident)\",\"NativeReferenceName\":\"Sum of Work_accident\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"Emp ID\"}},\"Function\":5},\"Name\":\"CountNonNull(Employee Attrition.Emp ID)\",\"NativeReferenceName\":\"Count of Emp ID\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"dept\"},\"Name\":\"Employee Attrition.dept\",\"NativeReferenceName\":\"dept\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"WorkAccidentPercentage\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":4,\"Percent\":0}}}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"13D\"}}},\"width\":{\"expr\":{\"Literal\":{\"Value\":\"3D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 406.51,
+          "width": 675.28,
+          "x": 604.72,
+          "y": 314.12,
+          "z": 4.00
+        },
+        {
+          "config": "{\"name\":\"c953af140d33a45dd000\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":0,\"width\":540.8923884514436,\"height\":314.12073490813646,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"clusteredColumnChart\",\"projections\":{\"Y\":[{\"queryRef\":\"Employee Attrition.AverageHoursLowSalary\"},{\"queryRef\":\"CountNonNull(Employee Attrition.Emp ID)\"}],\"Category\":[{\"queryRef\":\"Employee Attrition.salary\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"e\",\"Entity\":\"Employee Attrition\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"AverageHoursLowSalary\"},\"Name\":\"Employee Attrition.AverageHoursLowSalary\",\"NativeReferenceName\":\"AverageHoursLowSalary\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"Emp ID\"}},\"Function\":5},\"Name\":\"CountNonNull(Employee Attrition.Emp ID)\",\"NativeReferenceName\":\"Count of Emp ID\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"salary\"},\"Name\":\"Employee Attrition.salary\",\"NativeReferenceName\":\"salary\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"AverageHoursLowSalary\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":4,\"Percent\":0}}}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"13D\"}}},\"width\":{\"expr\":{\"Literal\":{\"Value\":\"3D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 314.12,
+          "width": 540.89,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ],
+  "theme": "Tidal"
+}
